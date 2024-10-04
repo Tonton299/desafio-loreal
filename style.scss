@@ -26,6 +26,36 @@ ul {
   justify-content: space-around;
   @media (max-width: 800px) {
     flex-direction: column;
+    text-align: center; // alinha o texto
+  }
+}
+
+main{
+  .banner{
+    width: 100vw;
+    @media (max-width:800px){
+      display: none; // retira a imagem
+    }
+  }
+
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    @media (max-width:800px){
+      flex-direction: column;
+    }
+  }
+
+  .caixa1{
+    line-height: 25px; // espaçamento entre as linhas
     text-align: center;
+    width: 30vw;
+    @media (max-width:800px){
+      width: 55vw;
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 }
